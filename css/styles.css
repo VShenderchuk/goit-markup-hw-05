@@ -186,6 +186,9 @@
 
      .links {
          text-decoration: none;
+         transition-property: all;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      }
 
      /* Class for all web links (blue-black)*/
@@ -407,6 +410,9 @@
          align-items: center;
          border: none;
          outline: none;
+         transition-property: all;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
      }
 
      .main-button:hover {
@@ -770,6 +776,7 @@
 
      .flex-block {
          position: relative;
+         overflow: hidden;
      }
 
      .flex-text {
@@ -787,6 +794,14 @@
          letter-spacing: 0.03em;
          color: var(--additional-color);
          background-color: var(--accent-color);
+         transform: translateY(100%);
+         opacity: 0;
+         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     .flex-block:hover .flex-text {
+         transform: translateY(0);
+         opacity: 1;
      }
 
      .item-title {
