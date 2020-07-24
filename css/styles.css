@@ -134,6 +134,10 @@
          margin-left: auto;
      }
 
+     .site-nav-main-item:focus {
+         color: var(--accent-color);
+     }
+
      .site-nav-address {
          display: flex;
          margin-left: auto;
@@ -508,7 +512,6 @@
          position: absolute;
          bottom: 0;
          width: 100%;
-        
      }
 
      .prodaction-item:last-child {
@@ -763,6 +766,27 @@
 
      .flex-card:nth-child(3n) {
          margin-right: 0;
+     }
+
+     .flex-block {
+         position: relative;
+     }
+
+     .flex-text {
+         position: absolute;
+         top: 0;
+         padding-left: 24px;
+         padding-right: 24px;
+         padding-top: 63px;
+         padding-bottom: 63px;
+         margin: 0;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 18px;
+         line-height: 28px;
+         letter-spacing: 0.03em;
+         color: var(--additional-color);
+         background-color: var(--accent-color);
      }
 
      .item-title {
